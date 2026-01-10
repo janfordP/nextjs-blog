@@ -6,6 +6,10 @@ import Link from 'next/link';
 import Date from '../components/date';
 import { about } from "../data/about";
 import { projects } from "../data/projects";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
+
 
 export default function Home({ allPostsData }) {
   return (
