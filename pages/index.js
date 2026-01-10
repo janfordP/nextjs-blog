@@ -4,6 +4,8 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import { about } from "../data/about";
+import { projects } from "../data/projects";
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,6 +13,13 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+	  
+	  <main className="px-6">
+        <HeroSection name={about.name} role={about.role} />
+        <AboutSection summary={about.summary} interests={about.interests} />
+        <ProjectsSection projects={projects} />
+      </main>
+	  
       <section className={utilStyles.headingMd}>
         <p>[Civil Engineer / AI Engineer]</p>
         <p>
@@ -18,6 +27,7 @@ export default function Home({ allPostsData }) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+	  
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
@@ -32,6 +42,7 @@ export default function Home({ allPostsData }) {
           ))}
         </ul>
       </section>
+	  
     </Layout>
   );
 }
