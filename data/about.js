@@ -1,6 +1,5 @@
 export const about = {
-  name: "Janford P",
-  role: "Quality Assurance Engineer | AI & Automation",
+  role: "Civil Engineer | Quality Engineer | AI & Automation",
   summary: [
     "Quality Assurance Engineer in an Australian precast manufacturing company.",
     "Focused on building AI tools to improve quality of work and optimise engineering processes.",
