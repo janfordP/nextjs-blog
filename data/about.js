@@ -1,5 +1,4 @@
 export const about = {
-  //name: "Janford P",
   role: "Civil Engineer | Quality Engineer | AI & Automation",
   summary: [
     "Quality Assurance Engineer in an Australian precast manufacturing company.",
