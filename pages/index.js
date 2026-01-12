@@ -13,13 +13,13 @@ import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
+    <HeroSection role={about.role} />
+	<Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
 	  
 	  <main className="px-6">
-        <HeroSection role={about.role} />
 		<AboutSection summary={about.summary} interests={about.interests} />
         <ProjectsSection projects={projects} />
       </main>
