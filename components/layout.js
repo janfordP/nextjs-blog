@@ -9,7 +9,7 @@ import Link from 'next/link';
 const name = 'Janford P';
 export const siteTitle = 'Next.js Sample Website';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, role }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -46,6 +46,10 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+			
+			<p className="mt-2 text-sm text-gray-600 text-center">
+				{role}
+			</p>
           </>
         ) : (
           <>
