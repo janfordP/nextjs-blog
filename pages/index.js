@@ -13,7 +13,9 @@ import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home({ allPostsData }) {
   return (
+  <>
     <HeroSection role={about.role} />
+	
 	<Layout home>
       <Head>
         <title>{siteTitle}</title>
@@ -40,6 +42,7 @@ export default function Home({ allPostsData }) {
       </section>
 	  
     </Layout>
+	</>
   );
 }
 
